@@ -28,3 +28,16 @@ There are four more common prefixes that your sister's class is studying: en (me
     Implement the make_word_groups(<vocab_words>) function that takes a vocab_words as a parameter in the following form: [<prefix>, <word_1>, <word_2> .... <word_n>], and returns a 
     string with the prefix applied to each word that looks like: '<prefix> :: <prefix><word_1> :: <prefix><word_2> :: <prefix><word_n>'.
 
+        vocab_words = []
+        new_list = []
+
+        def make_word_groups(*vocab_words):
+            prefix = vocab_words[0]
+            new_list. append(prefix)
+            length = len(vocab_words)
+            for i in range(1,length):
+                new_list.append(prefix + vocab_words[i])
+
+            print(*new_list, sep= " :: ")
+
+        make_word_test = make_word_groups("pre", "serve", "dispose", "disposition", "date")
