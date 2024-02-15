@@ -41,3 +41,22 @@ There are four more common prefixes that your sister's class is studying: en (me
             print(*new_list, sep= " :: ")
 
         make_word_test = make_word_groups("pre", "serve", "dispose", "disposition", "date")
+
+3. Remove a suffix from a word
+ness is a common suffix that means 'state of being'. In this activity, your sister needs to find the original root word by removing the ness suffix. But of course there are pesky spelling rules: If the root word originally ended in a consonant followed by a 'y', then the 'y' was changed to 'i'. Removing 'ness' needs to restore the 'y' in those root words. e.g. happiness --> happi --> happy.
+
+    Implement the remove_suffix_ness(<word>) function that takes in a word, and returns the root word without the ness suffix.
+
+        diff_word = " "
+   
+        def remove_suffix_ness(diff_word):
+            diff_word = str(input("Please enter the the word you would like to " +
+                             "remove the suffix 'ness' from: ")).strip()
+            new_word = diff_word.rstrip(diff_word[-4:])
+            if new_word[-1] == "i":
+               final_word = new_word.rstrip(new_word[-1:])
+               print(final_word + "y")
+            else:
+                print(new_word)
+
+        remove_suffix_test = remove_suffix_ness(diff_word)
