@@ -1,4 +1,4 @@
-# Little_sister-s_vocab
+# Little_sister's_vocab
 
 ## A set of 4 challenges to test your coding for helping with little sister's vocabulary homework 
 
